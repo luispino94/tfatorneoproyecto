@@ -1,0 +1,100 @@
+/**** Página Nosotros- Cards ***/
+.card-group{
+    margin-bottom: 10px;
+}
+
+    .card {
+        margin: 10px;
+        margin-top: 25px;
+
+            .card-img-top {
+                height: 400px;
+            }
+
+}
+/*** Media Querie Card Group ***/
+@media (max-width: 576px){
+    .card-group {
+        margin: 0 auto;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+        .card-img-top {
+            height: 300px;
+        } 
+            .card {
+                margin: 0 auto;
+            }
+
+                .titulo { 
+                    letter-spacing: 1px;
+                    word-spacing: 1px;
+
+                }    
+}
+
+
+/***Formulario Inscripción ***/
+
+
+.form-group {
+    color: white;
+}
+
+.btn {
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(255, 136, 61);
+}
+.text-muted {
+    @include tipografia ($arial, 1em, italic,null,bold, null);
+}
+
+.register-bg {
+    background-image: url("https://www.muycomputer.com/wp-content/uploads/2020/03/CallOfDutyWarzone.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/***Media Queries para la img del formulario ***/
+
+@media (max-width: 1200px) {
+    .register-bg {
+        height: 500px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px){
+    .register-bg {
+        height: 400px;
+      
+    }
+        
+}
+
+@media (max-width: 768px){
+    .register-bg {
+        height: 300px;
+        width: 100%;
+    }
+      
+}
+
+@media (max-width: 475px){
+    .register-bg {
+        height: 250px;
+        width: 100%;
+    }
+      
+}
+
+    /***Media Queries Portada ***/
+    @media (max-width:899px) {
+        .portada img {
+            width: 100%;
+            height: 350px;
+        
+        }
+    }  

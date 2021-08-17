@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   margin: 0;
   padding: 0;
@@ -29,15 +30,12 @@ body {
   margin-bottom: 4px;
 }
 
-.portada {
-  width: 100%;
+.subInscripcion legend label {
+  text-align: center;
 }
 
-.portada img {
-  width: 100%;
-  height: 450px;
-}
-
+/****header***/
+/***Menú de Navegación de todas las páginas ***/
 .navbar-nav {
   width: 100%;
   background-image: linear-gradient(0.2deg, #070707 -13.1%, #0f0f0f 31.9%, black 69.6%);
@@ -56,6 +54,8 @@ body {
   padding: 5px;
 }
 
+/****main***/
+/***Imagen principal del Index ***/
 main {
   width: 100%;
   height: auto;
@@ -129,13 +129,14 @@ main {
   text-align: center;
 }
 
+/***Media Queries de Portada y Imagen principal ***/
 @media (max-width: 899px) {
   .img-hidden-sm {
     display: none;
   }
   .portada img {
     width: 100%;
-    height: 250px;
+    height: 350px;
   }
   .contenedor figure .capa {
     position: static;
@@ -149,10 +150,70 @@ main {
   }
 }
 
-.subInscripcion legend label {
-  text-align: center;
+/****grid***/
+/***Grid Página Fechas ***/
+.contenedorgrid {
+  display: grid;
+  width: 70%;
+  height: auto;
+  grid-template-columns: 15% 15% 35%;
+  margin: auto;
+  padding: 30px 40px;
+  justify-content: center;
 }
 
+.contenedorgrid .fechasGrid {
+  transform: translateY(-25px);
+  box-shadow: 1px 2px 5px 5px #f84904;
+}
+
+.fechasGrid {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  border: 1px solid white;
+  color: #fcbd96;
+  justify-content: space-evenly;
+  background-color: black;
+  padding: 10px;
+}
+
+/*Media Queries de Fechas Grid*/
+@media (max-width: 750px) {
+  .contenedorgrid {
+    width: 100%;
+    height: auto;
+    grid-template-columns: 30% 30% 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .contenedorgrid {
+    width: 100%;
+    height: auto;
+    grid-template-columns: 30% 30% 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .fechasGrid {
+    width: 100%;
+    height: auto;
+  }
+  p {
+    font-size: .8rem;
+  }
+}
+
+/***Media Queries Portada ***/
+@media (max-width: 899px) {
+  .portada img {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+/****footer***/
 footer {
   background-image: linear-gradient(179.4deg, black 14.6%, #e95d00 104.7%);
   height: auto;
@@ -217,8 +278,9 @@ footer {
   text-transform: capitalize;
 }
 
+/****section***/
+/***Página Reglas y Tarifas ***/
 section {
-  /*reglas/tarifas*/
   width: 100%;
   padding: 40px;
 }
@@ -227,15 +289,17 @@ section {
   display: flex;
   padding: 10px;
   margin: 0 auto;
+  height: auto;
   width: 100%;
   justify-content: space-evenly;
   background: linear-gradient(to top, #070707, #383838);
+  box-shadow: 0 5px 7px #f84904;
 }
 
 .cajas {
-  width: 55%;
-  padding: 30px;
-  margin: 5px;
+  width: 50%;
+  padding: 20px;
+  margin: 1px;
 }
 
 .cajas p {
@@ -250,13 +314,13 @@ section {
 .tabla3 {
   width: 30%;
   height: auto;
-  justify-content: left;
+  justify-content: center;
   /*space, margin 0. Pixels*/
-  align-items: left;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   position: absolute;
 }
 
@@ -284,6 +348,34 @@ section {
   color: #fcbd96;
 }
 
+/***Media Queries para mi tabla de tárifas ***/
+@media (max-width: 700px) {
+  .contenedor__section {
+    flex-direction: column;
+    box-shadow: 0 5px 7px #f84904;
+  }
+  .cajas {
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+  }
+  .tabla3 {
+    position: static;
+    margin-top: 2px;
+    width: 60%;
+  }
+}
+
+/***Media Queries Portada ***/
+@media (max-width: 899px) {
+  .portada img {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+/****section***/
+/***Página Premios ***/
 .contenedorPremios {
   width: 100%;
   height: auto;
@@ -340,66 +432,62 @@ section {
   margin-bottom: 40px;
 }
 
-.contenedorgrid {
-  display: grid;
-  width: 70%;
-  height: auto;
-  grid-template-columns: 15% 15% 35%;
-  margin: auto;
-  padding: 30px 40px;
-  justify-content: center;
+/***Media Queries Portada ***/
+@media (max-width: 899px) {
+  .portada img {
+    width: 100%;
+    height: 350px;
+  }
 }
 
-.contenedorgrid .fechasGrid {
-  transform: translateY(-25px);
-  box-shadow: 1px 2px 5px 5px #f84904;
-}
-
-.fechasGrid {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1em;
-  border: 1px solid white;
-  color: #fcbd96;
-  justify-content: space-evenly;
-  background-color: black;
-  padding: 10px;
-}
-
-.carousel-item {
+/****header***/
+/***Portada TFA TOURNAMENT - LOGO- LOBO ***/
+.portada {
   width: 100%;
-  height: 500px;
-  text-align: center;
-  min-height: 500px;
 }
 
-.carousel-item .carousel-caption h1 {
+.portada img {
+  width: 100%;
+  height: 450px;
+}
+
+/****bootstrap***/
+/**** Página Nosotros- Cards ***/
+.card-group {
+  margin-bottom: 10px;
+}
+
+.card {
+  margin: 10px;
+  margin-top: 25px;
+}
+
+.card .card-img-top {
+  height: 400px;
+}
+
+/*** Media Querie Card Group ***/
+@media (max-width: 576px) {
+  .card-group {
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  .card-img-top {
+    height: 300px;
+  }
+  .card {
+    margin: 0 auto;
+  }
+  .titulo {
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+}
+
+/***Formulario Inscripción ***/
+.form-group {
   color: white;
-}
-
-.container h1 {
-  color: white;
-}
-
-.contact-box {
-  padding: 3rem;
-}
-
-.main-section {
-  margin: auto;
-  margin-top: 25%;
-  padding: 0;
-}
-
-.user-img {
-  margin-top: -50px;
-  margin-bottom: 35px;
-  margin: auto;
-}
-
-.user-img img {
-  width: 250px;
-  height: 300px;
 }
 
 .btn {
@@ -408,49 +496,52 @@ section {
   background-color: #ff883d;
 }
 
-.form-group {
-  color: white;
-}
-
-.Links {
+.text-muted {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 1em;
   font-style: italic;
   font-weight: bold;
-  color: #f1a372;
-  list-style: none;
-  justify-content: center;
 }
 
 .register-bg {
-  background-image: url("https://www.hd-tecnologia.com/imagenes/articulos/2021/04/El-fin-de-Call-of-Duty-Warzone-sera-este-21-de-abril-segun-Activision.jpg");
+  background-image: url("https://www.muycomputer.com/wp-content/uploads/2020/03/CallOfDutyWarzone.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/*Media Queries de Fechas Grid*/
-@media (max-width: 750px) {
-  .contenedorgrid {
+/***Media Queries para la img del formulario ***/
+@media (max-width: 1200px) {
+  .register-bg {
+    height: 500px;
     width: 100%;
-    height: auto;
-    grid-template-columns: 30% 30% 50%;
   }
 }
 
-@media (max-width: 400px) {
-  .contenedorgrid {
-    width: 100%;
-    height: auto;
-    grid-template-columns: 30% 30% 50%;
+@media (max-width: 992px) {
+  .register-bg {
+    height: 400px;
   }
 }
 
-@media (max-width: 400px) {
-  .fechasGrid {
+@media (max-width: 768px) {
+  .register-bg {
+    height: 300px;
     width: 100%;
-    height: auto;
   }
-  p {
-    font-size: .8rem;
+}
+
+@media (max-width: 475px) {
+  .register-bg {
+    height: 250px;
+    width: 100%;
+  }
+}
+
+/***Media Queries Portada ***/
+@media (max-width: 899px) {
+  .portada img {
+    width: 100%;
+    height: 350px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

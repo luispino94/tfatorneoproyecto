@@ -1,3 +1,23 @@
-description" content="Somos un equipo dedicado a la competitivo en warzone>
-keywrods" content="Warzone, tfa, torneo, reglas>
+INDEX:
+"description":Somos un equipo dedicado a la competitivo en warzone.
+"keywords":tfa tournament, torneos warzone.
 
+Reglas : 
+"description": Mediante las reglas de nuestro proyecto TFA TOURNAMENT aseguramos una mayor experiencia de juego para todos nuestros partipicantes.
+"keywords": Reglas, tarifas.
+
+Premios:
+"description" :Todos nuestros premios estan patrocinados por la marca oficial de Logitech, los cuales cuentan con garantía por un año.
+"keywords": Logitech Premios, premios.
+
+Nosotros: 
+"description": Unidos por un mismo sueño, decidimos crear el equipo TFA, con el afán de poder cumplir nuestras metas junto a nuestros jugadores que tienen los mismos sueños, creando así un hermoso ambiente y familia.
+"keywords": Nosotros, equipo.
+
+Inscribite: 
+"description": Las incripciones tienen un cupo límitado y se organizan de manera semestral. Los mejores equipos de Latam ya tienen su lugar. Vos y tu equipo.¿Se lo van a perder?.
+"keywords": Inscripción.
+
+Fechas: 
+"description" :Las fechas ya están, disponibles. No se modifican, por favor elegir bien el día ya que no hay reembolso.
+"keywords": Fechas.
